@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ----general---- */
+
+header {
+    height: auto;
+}
+
+main {
+    margin-bottom: 30px;
+}
+
+ul,
+ol {
+    padding-left: 0;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #362717;
+}
+
+.container h2 {
+    margin-top: 30px;
+}
+
+.myBtn {
+    background-color: #ffbd78;
+}
+
+.myBtn:hover {
+    background-color: #ffbd78;
+}
+
+
+.cardProduct:hover .myBtn,
+.detailButton:hover,
+.myBtnSecond,
+.myBtnSecond:hover {
+    background-color: #cf5029;
+    color: #fff;
+}
+
+i {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+i:hover {
+    color: #cf5029;
+}
+
+.black {
+    /* color: #000; */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+/* ---------nav-------- */
+.navbar {
+    background-color: #ffbc9a;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #cf5029;
+}
+
+.active {
+    font-weight: 600;
+    border-bottom: 2px solid #cf5029;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #cf5029;
+    color: #cf5029;
+}
+
+/* ---------inicio--------- */
+.banner {
+    height: calc(100vh - 86px);
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.name {
+    background-color: #ffbc9ac0;
+    padding: 10px 20px;
+    width: fit-content;
+}
+
+.name h1,
+.name h2 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.offerContainer {
+    border-bottom: 4px solid #ffbc9a;
+    padding: 20px;
+}
+
+.cardProduct {
+    width: 350px;
+    padding: 20px;
+}
+
+.cardProduct:hover {
+    border-radius: 24px;
+    box-shadow: 0px 10px 30px 0px rgba(51, 51, 51, 0.10);
+}
+
+.cardProduct img {
+    width: 100%;
+}
+
+/* ---------contacto------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerForm {
+    background-color: #ffbc9a;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.elementForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.elementForm:focus-within label {
+    color: #cf5029;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    background-color: #ffbc9a;
+}
+
+input:focus {
+    border-bottom: 2px solid #cf5029;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+.containerInfo {
+    color: #cf5029;
+}
+
+
+/* --------producto------ */
+.product {
+    margin: 15px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid #ffbc9a;
+}
+
+.details {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details h3 {
+    font-size: 1.17em;
+}
+
+.details p {
+    font-weight: 600;
+}
+
+/* ---------galeria--------- */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "foto1 foto2 foto3"
+        "foto4 foto5 foto6"
+        "foto7 foto8 foto9"
+        "foto10 foto11 foto12";
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.foto1 {
+    grid-area: foto1;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.foto3 {
+    grid-area: foto3;
+}
+
+.foto4 {
+    grid-area: foto4;
+}
+
+.foto5 {
+    grid-area: foto5;
+}
+
+.foto6 {
+    grid-area: foto6;
+}
+
+.foto7 {
+    grid-area: foto7;
+}
+
+.foto8 {
+    grid-area: foto8;
+}
+
+.foto9 {
+    grid-area: foto9;
+}
+
+.foto10 {
+    grid-area: foto10;
+}
+
+.foto11 {
+    grid-area: foto11;
+}
+
+.foto12 {
+    grid-area: foto12;
+}
+
+
+.gallery img:hover {
+    filter: brightness(105%);
+}
+
+/* -------nosotros------- */
+
+.aboutUs h2 {
+    color: #cf5029;
+}
+
+.teamContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.peopleTable {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 400px;
+    height: 400px;
+    gap: 6px;
+}
+
+.people {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.people img {
+    height: 100%;
+    border-radius: 15px;
+}
+
+.people1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.people2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.people3 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+/* -------footer---- */
+
+footer {
+    background-color: #ffbc9a;
+}
+
+footer i {
+    cursor: pointer;
+}
+
+.infoFooter {
+    width: 100%;
+}
+
+
+@media (max-width: 992px) {
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "foto1 foto2"
+            "foto3 foto4"
+            "foto5 foto6"
+            "foto7 foto8"
+            "foto9 foto10"
+            "foto11 foto12"
+    }
+
+    .offerContainer {
+        flex-direction: column;
+    }
+
+    /* ---footer----- */
+
+    footer {
+        padding-top: 20px;
+    }
+
+    .logoFooter {
+        display: none;
+    }
+
+    .column {
+        justify-content: space-between !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .offerImg {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .container,
+    footer {
+        padding: 20px 30px;
+    }
+
+    /* ------nosotros----- */
+
+    .peopleTable {
+        display: inline;
+        width: auto;
+        height: auto;
+    }
+
+    .people {
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .people img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* -----footer----- */
+
+    .column {
+        flex-direction: column;
+        align-items: start;
+    }
+
+}
